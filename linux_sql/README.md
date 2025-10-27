@@ -11,6 +11,7 @@ The database is now ready so first the hardware information is inserted into the
 
 ## Architecture
 Visual diagram of a three Linux server cluster running the data collection agents and passing that information to a PostgreSQL database that's run on Docker
+
 ![my image](./assets/ClusterDiagram.png)
 
 ## Scripts
