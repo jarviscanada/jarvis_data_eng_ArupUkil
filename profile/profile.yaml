@@ -12,15 +12,18 @@ summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis 
 skills:
   # At least 5 skills
   proficient:
+    - ReactJS/NodeJS/NextJS
+    - HTML/CSS
+    - C++
     - Java
     - Linux/Bash
-    - RDBMS/SQL
+    - PostgresSQL
     - Agile/Scrum
     - Git
   # At least 5 skills
   competent:
-    - Donec
-    - fermentum
+    - Python
+    - C
     - Donec
     - fermentum
     - Donec
@@ -65,7 +68,7 @@ jarvis_projects:
 # Feel free to add more projects
 highlighted_projects:
     #project name
-  - name: "Web app for resturant"
+  - name: "Scriptorium"
     #URL is optional
     git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
@@ -81,30 +84,25 @@ professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
   - title: "Software Developer"
     company: "Jarvis"
-    duration: "2020-present"
+    duration: "2025-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
-  - title: "Tutor"
-    company: "XYZ Company"
-    duration: "2019"
+  - title: "Software QA Engineer"
+    company: "SS&C Technologies"
+    duration: "Sept. 2023 - Aug. 2024"
     description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
 
 #List of edcuation
 education: 
-  - school_name: "XYZ university"
-    duration: "2012-2016"
-    degree: "Bachelor of Applied Sciences"
-    department: "Electrical and Computer Engineering"
-    # optional
-    awards_achievements: 
-      - "Scholarship"
-      - "Dean's List (2015, 2016): Ut enim ad minim veniam"
-      - "GPA: 3.8/4.0"
-  - school_name: "XYZ university"
-    duration: "2016-2018"
-    degree: "Master of Engineering"
-    department: "Electrical and Computer Engineering"
-    awards_achievements: 
+  - school_name: "University of Toronto"
+    duration: "2020-2025"
+    degree: "Honours Bachelor of Sciences"
+    department: "Computer Science and Mathematics"
+#    # optional
+#    awards_achievements:
+#      - "Scholarship"
+#      - "Dean's List (2015, 2016): Ut enim ad minim veniam"
+#      - "GPA: 3.8/4.0"
 
 #Optional section
 others:
