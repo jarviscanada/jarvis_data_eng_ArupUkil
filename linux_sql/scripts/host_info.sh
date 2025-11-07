@@ -21,7 +21,7 @@ cpu_model=$(echo "$specs" | egrep "^Model name:" | cut -d: -f2- | xargs)
 cpu_mhz=$(cat /proc/cpuinfo | egrep "^cpu MHz" | awk -F: '{print $2}' | tail -n1 | xargs)
 l2_cache=$(echo "$specs" | egrep "^L2 cache:" | awk -F: '{print $2}' | awk '{print $1}' | xargs)
 total_mem=$(cat /proc/meminfo | egrep "^MemTotal:" | awk '{print $2}' | xargs)
-timestamp=$(vmstat -t | awk '{print $18 " " $19}' | tail -n1 | xargs)
+timestamp=$(date '+%F %T')
 hostname=$(hostname -f)
 
 # Query to put server info data into host_info table
