@@ -1,64 +1,44 @@
 # Arup Ukil . Jarvis Consulting
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit.
+Hi, I'm a new graduate from the University of Toronto with a Bachelor of Science in Computer Science and Mathematics. I most recently completed a one-year internship at the fintech company SS&C Technologies where I worked independently on multiple projects with some guidance from a senior. Specifically, I've made a React and Java Spring Boot-based test case queue manager and an automated visual/regression reporting tool using Playwright with HTML/CSS/JavaScript. Additionally, I migrated legacy LoadRunner to JMeter scripts and created an Excel VBA macro to easily create Progress4GL database queries. I conducted research at iSE Labs on a software comprehension tool that clusters root-to-leaf execution paths (agglomerative clustering) and applies NLP techniques for labeling. I've also collaborated in small teams, such as a six-person software design project for the charity United for Literacy, where we built a volunteer lifecycle app using React Native and Django. Beyond work, I built Scriptorium, a Next.js/TypeScript platform for writing and running code across languages, deployed on AWS (ECS/ECR/RDS) with a Prisma-backed REST API, JWT authentication, and Docker sandboxes to enforce code isolation and resource limits. Overall, I bring substantial hands-on experience in software development through my undergrad that I hope leverage to succeed in my early career.
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
+**Proficient:** React/React Native, Node.js/Next.js, HTML/CSS, TypeScript/JavaScript, C++, Java, Linux/Bash, PostgreSQL/SQL, Agile/Scrum, Git, REST APIs
 
-**Competent:** Donec, fermentum, Donec, fermentum, Donec
+**Competent:** Python, C, AWS, Docker, WSL, Postman
 
-**Familiar:** Donec, fermentum, fermentum, fermentum, fermentum
+**Familiar:** Machine Learning, Python ML Libraries (NumPy, TensorFlow, Pytorch, Scikit-learn, Gensim), Flask, Django, Figma, Jenkins, Jira
 
 ## Jarvis Projects
 
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_ArupUkil](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil/tree/master/linux_sql)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil/tree/master/linux_sql)]: Developed a Linux Cluster Monitoring Agent that helps collect information from Linux servers in a cluster. It collects the server hardware information once and then in set intervals (such as every minute) collects the server's resource usage. Tested on Rocky Linux 9 though it may work on other distros. The data is collected by executing bash scripts that run Linux commands and then saving the data in a PostgreSQL database that's run on a Docker container.
 
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil/tree/master/core_java)]:
-      
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil/tree/master/springboot)]: Not Started
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil/tree/master/cloud_devops)]: Not Started
+**SQL Practice** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil/tree/master/sql)]: Practiced and learned about SQL, specifically PostgreSQL, by writing queries to questions from https://pgexercises.com/. The queries covered a wide variety of topics on SQL such as basic CRUD requests, joins, string manipulation, and aggregate and window functions. The site provides official solutions, which I used to verify my answers were correct by running my queries on a psql Docker container that used the clubdata.sql file to create the initial database.
 
 
 ## Highlighted Projects
-**Web app for resturant** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Scriptorium** [[GitHub](https://github.com/ArupUkil/Scriptorium)]: Created and deployed a web app through AWS ECS, ECR, and RDS where you can write, execute, and share code in multiple programming languages using Next.js, React, TypeScript, and Tailwind CSS. Implemented a Prisma database schema which were managed and interacted via RESTful APIs with account authentication (JWT) in the backend infrastructure. Executed user code in isolated containers using Docker to maintain security and enforce limits on computer resource usage.
 
-**Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**United for Literacy Volunteer Lifecycle Mobile App**: Worked with a team of six for the University of Toronto's partner charity, United for Literacy, to create an app that streamlines all aspects of the volunteer lifecycle. Used React Native to create an in-app quiz that confirms that the volunteers understand United for Literacy's volunteering policy. Worked with a teammate to set up the group chat functionality - specifically connected the Django backend API with the frontend such that different types of users can be differentiated.
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2020-present)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Software Developer, Jarvis (2025-present)**: Trained my technical and behavioural skills through developing multiple software projects using new tools for each. Created projects such as a Linux Clustering Agent (Bash, PostgreSQL, and Docker). Developed projects using a Scrum system by having planning meetings, daily stand-ups, and retrospectives through project development.
 
-**Tutor, XYZ Company (2019)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Software QA Engineer, SS&C Technologies (Sept. 2023 - Aug. 2024)**: Used React and Java Spring Boot to develop a new test case queue manager that automates the management of test runs on remote machines, improving efficiency by eliminating the need for manual setup and result checking by users. Using the Playwright TypeScript library, created a website navigation tool which creates a BackstopJS report and a file comparison report on the downloaded files using a tool from the company. Utilizing JavaScript, those reports alongside their respective website navigation path information were then combined into a larger HTML report that contains all the information for each scenario and viewport in the BackstopJS report. Assisted in developing an ExcelVBA macro that allows users to generate Progress 4GL queries without knowledge of Progress.  Migrated and updated legacy scripts from LoadRunner to JMeter to eliminate financial expenses in performance testing.
+
+**Research Assistant, iSE Labs (May 2022 - Aug. 2022)**: Developed a Python/Flask based reverse engineering comprehension tool that parses source code call graphs into root-to-leaf execution paths and applies agglomerative clustering to produce a hierarchical tree representation.  Enhanced semantic labeling of cluster nodes using Gensim topic models, introducing Word2Vec/Doc2Vec similarity measures, and TextRank for more accurate function name based annotations. Developed an interactive GoJS frontend to visualize comparisons of execution path trees across different software systems.
 
 
 ## Education
-**XYZ university (2012-2016)**, Bachelor of Applied Sciences, Electrical and Computer Engineering
-- Scholarship
-- Dean's List (2015, 2016): Ut enim ad minim veniam
-- GPA: 3.8/4.0
-
-**XYZ university (2016-2018)**, Master of Engineering, Electrical and Computer Engineering
+**University of Toronto (2020-2025)**, Honours Bachelor of Science, Computer Science and Mathematics
 
 
 ## Miscellaneous
-- Udacity Machine Learning (2019)
-- Winner
-- Basketball player
-- Competitive gaming
-- Volunteer, ABC Food bank: Ut enim ad minim veniam
+- Care Worker at Su-Rekha Care Centre: worked as a night-shift employee where I cleaned the care home, assisted any residents that required help, and did preparation work for the next day
+- Kumon Teaching Assistant Volunteer: guided children from preschool to 12th grade to understand and solve their Kumon math and reading work
