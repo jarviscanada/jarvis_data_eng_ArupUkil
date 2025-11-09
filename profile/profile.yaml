@@ -1,0 +1,133 @@
+# Preferred name (Characters only)
+name: "Arup Ukil"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_ArupUkil
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: Hi, I'm a new graduate from the University of Toronto with a Bachelor of Science in Computer Science and Mathematics. I most recently completed a one-year internship at the fintech company SS&C Technologies where I worked independently on multiple projects with some guidance from a senior. Specifically, I've made a React and Java Spring Boot-based test case queue manager and an automated visual/regression reporting tool using Playwright with HTML/CSS/JavaScript. Additionally, I migrated legacy LoadRunner to JMeter scripts and created an Excel VBA macro to easily create Progress4GL database queries. I conducted research at iSE Labs on a software comprehension tool that clusters root-to-leaf execution paths (agglomerative clustering) and applies NLP techniques for labeling. I've also collaborated in small teams, such as a six-person software design project for the charity United for Literacy, where we built a volunteer lifecycle app using React Native and Django. Beyond work, I built Scriptorium, a Next.js/TypeScript platform for writing and running code across languages, deployed on AWS (ECS/ECR/RDS) with a Prisma-backed REST API, JWT authentication, and Docker sandboxes to enforce code isolation and resource limits. Overall, I bring substantial hands-on experience in software development through my undergrad that I hope leverage to succeed in my early career.
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - React/React Native
+    - Node.js/Next.js
+    - HTML/CSS
+    - TypeScript/JavaScript
+    - C++
+    - Java
+    - Linux/Bash
+    - PostgreSQL/SQL
+    - Agile/Scrum
+    - Git
+    - REST APIs
+  # At least 5 skills
+  competent:
+    - Python
+    - C
+    - AWS
+    - Docker
+    - WSL
+    - Postman
+  # At least 5 skills
+  familiar:
+    - Machine Learning
+    - Python ML Libraries (NumPy, TensorFlow, Pytorch, Scikit-learn, Gensim)
+    - Flask, Django
+    - Figma
+    - Jenkins
+    - Jira
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Developed a Linux Cluster Monitoring Agent that helps collect information from Linux servers in a cluster. It collects the server hardware information once and then in set intervals (such as every minute) collects the server's resource usage. Tested on Rocky Linux 9 though it may work on other distros. The data is collected by executing bash scripts that run Linux commands and then saving the data in a PostgreSQL database that's run on a Docker container.
+  - name: "SQL Practice"
+    git_url: "/sql"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Practiced and learned about SQL, specifically PostgreSQL, by writing queries to questions from https://pgexercises.com/. The queries covered a wide variety of topics on SQL such as basic CRUD requests, joins, string manipulation, and aggregate and window functions. The site provides official solutions, which I used to verify my answers were correct by running my queries on a psql Docker container that used the clubdata.sql file to create the initial database.
+#  - name: "Core Java Apps"
+#    git_url: "/core_java"
+#    description:
+#      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+#      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+#      - "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+#  - name: "Springboot App"
+#    git_url: "/springboot"
+#    description: ""
+#  - name: "Python Data Analytics"
+#    git_url: "/python_data_anlytics"
+#    description: ""
+#  - name: "Hadoop"
+#    git_url: "/hadoop"
+#    description: ""
+#  - name: "Spark"
+#    git_url: "/spark"
+#    description: ""
+#  - name: "Cloud/DevOps"
+#    git_url: "/cloud_devops"
+#    description: ""
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "Scriptorium"
+    #URL is optional
+    git_url: "https://github.com/ArupUkil/Scriptorium"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Created and deployed a web app through AWS ECS, ECR, and RDS where you can write, execute, and share code in multiple programming languages using Next.js, React, TypeScript, and Tailwind CSS. Implemented a Prisma database schema which were managed and interacted via RESTful APIs with account authentication (JWT) in the backend infrastructure. Executed user code in isolated containers using Docker to maintain security and enforce limits on computer resource usage.
+  - name: "United for Literacy Volunteer Lifecycle Mobile App"
+    git_url:
+    description: Worked with a team of six for the University of Toronto's partner charity, United for Literacy, to create an app that streamlines all aspects of the volunteer lifecycle. Used React Native to create an in-app quiz that confirms that the volunteers understand United for Literacy's volunteering policy. Worked with a teammate to set up the group chat functionality - specifically connected the Django backend API with the frontend such that different types of users can be differentiated.
+
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Software Developer"
+    company: "Jarvis"
+    duration: "2025-present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Trained my technical and behavioural skills through developing multiple software projects using new tools for each. Created projects such as a Linux Clustering Agent (Bash, PostgreSQL, and Docker). Developed projects using a Scrum system by having planning meetings, daily stand-ups, and retrospectives through project development."
+  - title: "Software QA Engineer"
+    company: "SS&C Technologies"
+    duration: "Sept. 2023 - Aug. 2024"
+    description: "Used React and Java Spring Boot to develop a new test case queue manager that automates the management of test runs on remote machines, improving efficiency by eliminating the need for manual setup and result checking by users. Using the Playwright TypeScript library, created a website navigation tool which creates a BackstopJS report and a file comparison report on the downloaded files using a tool from the company. Utilizing JavaScript, those reports alongside their respective website navigation path information were then combined into a larger HTML report that contains all the information for each scenario and viewport in the BackstopJS report. Assisted in developing an ExcelVBA macro that allows users to generate Progress 4GL queries without knowledge of Progress.  Migrated and updated legacy scripts from LoadRunner to JMeter to eliminate financial expenses in performance testing."
+  - title: "Research Assistant"
+    company: "iSE Labs"
+    duration: "May 2022 - Aug. 2022"
+    description: "Developed a Python/Flask based reverse engineering comprehension tool that parses source code call graphs into root-to-leaf execution paths and applies agglomerative clustering to produce a hierarchical tree representation.  Enhanced semantic labeling of cluster nodes using Gensim topic models, introducing Word2Vec/Doc2Vec similarity measures, and TextRank for more accurate function name based annotations. Developed an interactive GoJS frontend to visualize comparisons of execution path trees across different software systems."
+
+#List of edcuation
+education: 
+  - school_name: "University of Toronto"
+    duration: "2020-2025"
+    degree: "Honours Bachelor of Science"
+    department: "Computer Science and Mathematics"
+#    # optional
+    awards_achievements:
+#      - "Scholarship"
+#      - "Dean's List (2015, 2016): Ut enim ad minim veniam"
+#      - "GPA: 3.8/4.0"
+
+#Optional section
+others:
+    #category
+#  - title: "Certificates"
+#    #list of items
+#    bullets:
+#      - "Udacity Machine Learning (2019)"
+#  - title: "Awards"
+#    bullets:
+#      - "Winner"
+  - title: "Volunteer Work"
+    bullets:
+      - "Care Worker at Su-Rekha Care Centre: worked as a night-shift employee where I cleaned the care home, assisted any residents that required help, and did preparation work for the next day"
+      - "Kumon Teaching Assistant Volunteer: guided children from preschool to 12th grade to understand and solve their Kumon math and reading work"
