@@ -1,6 +1,6 @@
 # Linux Cluster Monitoring Agent
 # Introduction
-The Linux Cluster Monitoring Agent is a program that helps collect information from Linux servers in a cluster. Specifically, it collects the server hardware information once and then in set intervals (such as every minute) collects the server's resource usage. Note that the only Linux distro that this has been tested on is for Rocky 9 Linux, but it may work for other distros. The data is collected by executing bash scripts that run Linux commands and then saving the data in a PostgreSQL database that's run on a Docker container. Git and GitHub have been used throughout the development of this project. Note that though the project is meant for collecting information across multiple servers and storing them in one database, the current version only works collect and stores the data inside the given server.
+The Linux Cluster Monitoring Agent is a program that helps collect information from Linux servers in a cluster. Specifically, it collects the server hardware information once and then in set intervals (such as every minute) collects the server's resource usage. Note that the only Linux distro that this has been tested on is for Rocky 9 Linux, but it may work for other distros. The data is collected by executing bash scripts that run Linux commands and then saving the data in a PostgreSQL database that's run on a Docker container. Note that small adjustments are needed so that the data collection works across a cluster of servers - explicitly being that the main psql database container must be connected through TCP from other external Linux servers.
 
 # Implementation
 The tool works by setting up a psql docker container where the data for the server is collected. Thus, first both docker and the postgres image must be downloaded. The psql_docker.sh script is then used to create, start, and potentially stop the docker container for the tool. Then a database called host_agent is created in the container (data persists on the computer through a volume named pgdata) and the tables used for data storage are initialised as defined in ddl.sql.
@@ -10,7 +10,7 @@ The database is now ready so first the hardware information is inserted into the
 
 
 ## Architecture
-Visual diagram of a three Linux server cluster running the data collection agents and passing that information to a PostgreSQL database that's run on Docker
+Visual diagram of a three external Linux server cluster running the data collection agents and passing that information to a PostgreSQL database running on Docker on the main Linux server that's also collecting its own data
 
 ![my image](./assets/ClusterDiagram.png)
 
@@ -24,10 +24,10 @@ Visual diagram of a three Linux server cluster running the data collection agent
 3. host_usage.sh is run to collect the server's resource usage information
 
 ```./scripts/host_usage.sh psql_host psql_port host_agent psql_user psql_password```
-4. crontab is used to automate running commands over every given time interval
+4. cron is used to automate running commands over every given time interval
 
 ```
-# edit the crontab jobs currently running
+# edit the cron jobs currently running
 crontab -e
 
 # add this command with your current path to crontab so that the script runs every minute
@@ -41,29 +41,29 @@ psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
 ## Database Modeling
 ### `host_info`
 
-| Name | Data type | Short description                      |
-|---|---|----------------------------------------|
-| id | SERIAL | Auto-increment primary key             |
-| hostname | VARCHAR | Name of the host machine (unique)      |
-| cpu_number | INT2 | Number of CPU cores (vCPUs)            |
-| cpu_architecture | VARCHAR | Type of CPU architecture               |
-| cpu_model | VARCHAR | Human-readable CPU model name          |
-| cpu_mhz | FLOAT8 | CPU frequency (MHz)                    |
-| l2_cache | INT4 | L2 cache size (kB)                     |
-| timestamp | TIMESTAMP | Time hardware data was collected (UTC) |
-| total_mem | INT4 | Total system memory (kB)               |
+| Name | Data type            | Short description                     |
+|---|----------------------|---------------------------------------|
+| id | SERIAL (PRIMARY KEY) | Auto-increment primary key            |
+| hostname | VARCHAR (UNIQUE)     | Name of the host machine     |
+| cpu_number | INT2                 | Number of CPU cores (vCPUs)           |
+| cpu_architecture | VARCHAR              | Type of CPU architecture              |
+| cpu_model | VARCHAR              | Human-readable CPU model name         |
+| cpu_mhz | FLOAT8               | CPU frequency (MHz)                   |
+| l2_cache | INT4                 | L2 cache size (kB)                    |
+| timestamp | TIMESTAMP            | Time hardware data was collected (UTC) |
+| total_mem | INT4                 | Total system memory (kB)              |
 
 ### `host_usage`
 
-| Name | Data type | Short description                               |
-|---|---|-------------------------------------------------|
-| timestamp | TIMESTAMP | Time usage data was collected (UTC)             |
-| host_id | SERIAL | Foreign key that references `id` in `host_info` |
-| memory_free | INT4 | Free memory amount (MB)                         |
-| cpu_idle | INT2 | Percent of total CPU time in idle               |
-| cpu_kernel | INT2 | Percent of total CPU time running kernel code   |
-| disk_io | INT4 | Time spent doing I/O operations (seconds)       |
-| disk_available | INT4 | Available disk space (MB)                       |
+| Name | Data type            | Short description                               |
+|---|----------------------|-------------------------------------------------|
+| timestamp | TIMESTAMP            | Time usage data was collected (UTC)             |
+| host_id | SERIAL (FOREIGN KEY) | Foreign key that references `id` in `host_info` |
+| memory_free | INT4                 | Free memory amount (MB)                         |
+| cpu_idle | INT2                 | Percent of total CPU time in idle               |
+| cpu_kernel | INT2                 | Percent of total CPU time running kernel code   |
+| disk_io | INT4                 | Time spent doing I/O operations (seconds)       |
+| disk_available | INT4                 | Available disk space (MB)                       |
 
 # Usage
 1. Start a psql instance using psql_docker.sh given that you are currently in the linux_sql directory in the CLI (need to have docker already downloaded)
