@@ -11,14 +11,14 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_ArupUkil",
   "highlighted_projects": [
     {
-      "description": "Created and deployed a web app through AWS ECS, ECR, and RDS where you can write, execute, and share code in multiple programming languages using Next.js, React, TypeScript, and Tailwind CSS. Implemented a Prisma database schema which were managed and interacted via RESTful APIs with account authentication (JWT) in the backend infrastructure. Executed user code in isolated containers using Docker to maintain security and enforce limits on computer resource usage.",
+      "description": "Created and deployed a social web app through AWS ECS, ECR, and RDS where you can write, share, and discuss about code in multiple programming languages using Next.js, React, TypeScript, and Tailwind CSS. Implemented a Prisma database schema which were managed and interacted via RESTful APIs with account authentication (JWT) in the backend infrastructure. Executed user code in isolated containers using Docker to maintain security and enforce limits on computer resource usage.",
       "git_url": "https://github.com/ArupUkil/Scriptorium",
       "name": "Scriptorium"
     },
     {
-      "description": "Worked with a team of six for the University of Toronto's partner charity, United for Literacy, to create an app that streamlines all aspects of the volunteer lifecycle. Used React Native to create an in-app quiz that confirms that the volunteers understand United for Literacy's volunteering policy. Worked with a teammate to set up the group chat functionality - specifically connected the Django backend API with the frontend such that different types of users can be differentiated.",
+      "description": "Worked with a team of six for a University of Toronto's partner charity, United for Literacy, to build an app that streamlines the volunteer lifecycle - from the application and onboarding process, through tools that support daily activities, to the final offboarding stage. Used React Native to create an in-app quiz that confirms that the volunteers understand United for Literacy's volunteering policy. Worked with a teammate to set up the group chat functionality - specifically connected the Django backend API with the frontend such that different types of users can be differentiated.",
       "git_url": null,
-      "name": "United for Literacy Volunteer Lifecycle Mobile App"
+      "name": "United for Literacy Volunteer Mobile App"
     }
   ],
   "jarvis_projects": [
@@ -26,18 +26,12 @@
       "description": "Developed a Linux Cluster Monitoring Agent that helps collect information from Linux servers in a cluster. It collects the server hardware information once and then in set intervals (such as every minute) collects the server's resource usage. Tested on Rocky Linux 9 though it may work on other distros. The data is collected by executing bash scripts that run Linux commands and then saving the data in a PostgreSQL database that's run on a Docker container.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
-    },
-    {
-      "description": "Practiced and learned about SQL, specifically PostgreSQL, by writing queries to questions from https://pgexercises.com/. The queries covered a wide variety of topics on SQL such as basic CRUD requests, joins, string manipulation, and aggregate and window functions. The site provides official solutions, which I used to verify my answers were correct by running my queries on a psql Docker container that used the clubdata.sql file to create the initial database.",
-      "git_url": "/sql",
-      "name": "SQL Practice"
     }
   ],
   "name": "Arup Ukil",
   "others": [
     {
       "bullets": [
-        "Care Worker at Su-Rekha Care Centre: worked as a night-shift employee where I cleaned the care home, assisted any residents that required help, and did preparation work for the next day",
         "Kumon Teaching Assistant Volunteer: guided children from preschool to 12th grade to understand and solve their Kumon math and reading work"
       ],
       "title": "Volunteer Work"
@@ -94,5 +88,5 @@
       "REST APIs"
     ]
   },
-  "summary": "Hi, I'm a new graduate from the University of Toronto with a Bachelor of Science in Computer Science and Mathematics. I most recently completed a one-year internship at the fintech company SS\u0026C Technologies where I worked independently on multiple projects with some guidance from a senior. Specifically, I've made a React and Java Spring Boot-based test case queue manager and an automated visual/regression reporting tool using Playwright with HTML/CSS/JavaScript. Additionally, I migrated legacy LoadRunner to JMeter scripts and created an Excel VBA macro to easily create Progress4GL database queries. I conducted research at iSE Labs on a software comprehension tool that clusters root-to-leaf execution paths (agglomerative clustering) and applies NLP techniques for labeling. I've also collaborated in small teams, such as a six-person software design project for the charity United for Literacy, where we built a volunteer lifecycle app using React Native and Django. Beyond work, I built Scriptorium, a Next.js/TypeScript platform for writing and running code across languages, deployed on AWS (ECS/ECR/RDS) with a Prisma-backed REST API, JWT authentication, and Docker sandboxes to enforce code isolation and resource limits. Overall, I bring substantial hands-on experience in software development through my undergrad that I hope leverage to succeed in my early career."
+  "summary": "Hi, I'm a new graduate from the University of Toronto with a Bachelor of Science in Computer Science and Mathematics. I'm a full-stack developer who gained practical experience throughout my undergrad. Examples include my one-year internship at the fintech company SS\u0026C Technologies where I worked independently on multiple projects such as a React and Java Spring Boot-based test case queue manager. Another being collaboration work in a six-person software design project for the charity United for Literacy, where we built a volunteer's lifecycle app using React Native and Django. Beyond work, I've built software such as Scriptorium, a Next.js/TypeScript social platform for writing, sharing, and discussing code across programming languages, which was deployed on AWS with JWT authentication and Docker-based code execution sandboxes. Despite my experiences aligning with more React and Java work, my personal favourite language to use is C++ which I've been using since high school to solve competitive programming problems. I don't have professional experience with C++ yet but at some point, I do wish to have a job using it. Overall, I bring substantial hands-on experience in software development through my undergrad that I hope to leverage to succeed in my early career."
 }
