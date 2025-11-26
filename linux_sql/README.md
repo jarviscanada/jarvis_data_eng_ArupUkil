@@ -18,12 +18,15 @@ Visual diagram of a three external Linux server cluster running the data collect
 1. psql_docker.sh is used to create, start, and stop the postgres docker container
 
 ```./scripts/psql_docker.sh start|stop|create [db_username][db_password]```
+
 2. host_info.sh is run once to collect the server's hardware information 
 
 ```./scripts/host_info.sh psql_host psql_port host_agent psql_user psql_password```
+
 3. host_usage.sh is run to collect the server's resource usage information
 
 ```./scripts/host_usage.sh psql_host psql_port host_agent psql_user psql_password```
+
 4. cron is used to automate running commands over every given time interval
 
 ```
@@ -33,6 +36,7 @@ crontab -e
 # add this command with your current path to crontab so that the script runs every minute
 * * * * * bash [current_path]/host_usage.sh psql_host psql_port host_agent psql_user psql_password > /tmp/host_usage.log
 ```
+
 5. ddl.sql is used to define the host_info and host_usage tables schema and create the tables in the host_agent database
 
 ```
