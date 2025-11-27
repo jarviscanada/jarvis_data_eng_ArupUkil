@@ -5,7 +5,9 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_ArupUkil
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: Hi, I'm a new graduate from the University of Toronto with a Bachelor of Science in Computer Science and Mathematics. I'm a full-stack developer who gained practical experience throughout my undergrad. Examples include my one-year internship at the fintech company SS&C Technologies where I worked independently on multiple projects such as a React and Java Spring Boot-based test case queue manager. Another being collaboration work in a six-person software design project for the charity United for Literacy, where we built a volunteer's lifecycle app using React Native and Django. Beyond work, I've built software such as Scriptorium, a Next.js/TypeScript social platform for writing, sharing, and discussing code across programming languages, which was deployed on AWS with JWT authentication and Docker-based code execution sandboxes. Despite my experiences aligning with more React and Java work, my personal favourite language to use is C++ which I've been using since high school to solve competitive programming problems. I don't have professional experience with C++ yet but at some point, I do wish to have a job using it. Overall, I bring substantial hands-on experience in software development through my undergrad that I hope to leverage to succeed in my early career.
+summary: I'm a graduate from the University of Toronto with a Bachelor of Science in Computer Science and Mathematics. I'm a full-stack developer who gained practical experience through my one-year internship at SS&C Technologies, volunteer work in a small team with the charity United for Literacy, and personal projects. Majority of the projects I've worked on have used React/React Native for the frontend and various backend tools such as Next.js, Java Spring Boot, and Django. Despite my experiences aligning with more React and Java work, my personal favourite language to use is C++ which I've been using since high school to solve competitive programming problems. I don't have professional experience with C++ yet but at some point, I do wish to have a job using it. Overall, I bring substantial hands-on experience in software development through my undergrad that I hope to leverage to succeed in my early career.
+
+# Examples include my one-year internship at the fintech company SS&C Technologies where I worked independently on multiple projects such as a React and Java Spring Boot-based test case queue manager. Another being collaboration work in a six-person software design project for the charity United for Literacy, where we built a volunteer's lifecycle app using React Native and Django. Beyond work, I've built software such as Scriptorium, a Next.js/TypeScript social platform for writing, sharing, and discussing code across programming languages, which was deployed on AWS with JWT authentication and Docker-based code execution sandboxes.
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -23,6 +25,7 @@ skills:
     - Agile/Scrum
     - Git
     - REST APIs
+    - Maven
   # At least 5 skills
   competent:
     - Python
@@ -51,6 +54,11 @@ jarvis_projects:
 #    git_url: "/sql"
 #    # The project description must start with an action verb (https://bit.ly/3guO98u)
 #    description: Practiced and learned about SQL, specifically PostgreSQL, by writing queries to questions from https://pgexercises.com/. The queries covered a wide variety of topics on SQL such as basic CRUD requests, joins, string manipulation, and aggregate and window functions. The site provides official solutions, which I used to verify my answers were correct by running my queries on a psql Docker container that used the clubdata.sql file to create the initial database.
+  - name: "Grep App"
+    git_url: "/core_java/grep"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Developed a mimic of the Linux `grep` command which allows users to search matching strings from files. The user gives a directory/file to look at and find all in the lines in file(s) of the given directory's based on a regex the user gives. The resulting lines put into a user given output file. This tool has been built using Core Java features, Lambda and Stream APIs, SLF4J for logging, and JUnit for testing. Development has been done using Maven and IntelliJ IDE with additional deployment being added by the usage of Docker for containerisation.
 #  - name: "Core Java Apps"
 #    git_url: "/core_java"
 #    description:
@@ -99,7 +107,7 @@ professional_experience:
   - title: "Software QA Engineer"
     company: "SS&C Technologies"
     duration: "Sept. 2023 - Aug. 2024"
-    description: "Used React and Java Spring Boot to develop a new test case queue manager that automates the management of test runs on remote machines, improving efficiency by eliminating the need for manual setup and result checking by users. Using the Playwright TypeScript library, created a website navigation tool which creates a BackstopJS report and a file comparison report on the downloaded files using a tool from the company. Utilizing JavaScript, those reports alongside their respective website navigation path information were then combined into a larger HTML report that contains all the information for each scenario and viewport in the BackstopJS report. Assisted in developing an ExcelVBA macro that allows users to generate Progress 4GL queries without knowledge of Progress.  Migrated and updated legacy scripts from LoadRunner to JMeter to eliminate financial expenses in performance testing."
+    description: "Used React and Java Spring Boot to develop a new test case queue manager that automates the management of test runs on remote machines. Created a website navigation tool using Playwright that creates a HTML page containing a BackstopJS report and a SS&C internal files comparison tool report. Assisted in developing an Excel VBA macro that allows users to generate Progress 4GL queries without knowledge of Progress. Migrated and updated legacy scripts from LoadRunner to JMeter to eliminate financial expenses in performance testing."
   - title: "Research Assistant"
     company: "iSE Labs"
     duration: "May 2022 - Aug. 2022"
