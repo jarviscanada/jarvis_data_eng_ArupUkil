@@ -28,7 +28,7 @@
       "name": "Cluster Monitor"
     },
     {
-      "description": "Developed a mimic of the Linux `grep` command which allows users to search matching strings from files. The user gives a directory/file to look at and find all in the lines in file(s) of the given directory's based on a regex the user gives. The resulting lines put into a user given output file. This tool has been built using Core Java features, Lambda and Stream APIs, SLF4J for logging, and JUnit for testing. Development has been done using Maven and IntelliJ IDE with additional deployment being added by the usage of Docker for containerisation.",
+      "description": "Developed a mimic of the Linux `grep` command which allows users to search matching strings from files. The user gives a directory/file to look at and find all in the lines in file(s) of the given directory's based on a regex the user gives. The resulting lines are put into a user given output file. This tool has been built using Core Java features, Lambda and Stream APIs, SLF4J for logging, and JUnit for testing. Development has been done using Maven and IntelliJ IDE with additional deployment being added by the usage of Docker for containerisation.",
       "git_url": "/core_java/grep",
       "name": "Grep App"
     }
@@ -45,7 +45,7 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Trained my technical and behavioural skills through developing multiple software projects using new tools for each. Created projects such as a Linux Clustering Agent (Bash, PostgreSQL, and Docker). Developed projects using a Scrum system by having planning meetings, daily stand-ups, and retrospectives through project development.",
+      "description": "Trained my technical and behavioural skills through developing multiple software projects using new tools for each. Created projects such as a Linux Clustering Agent (Bash, PostgreSQL, and Docker) and Java Grep App. Developed projects using a Scrum system by having planning meetings, daily stand-ups, and retrospectives through project development.",
       "duration": "2025-present",
       "title": "Software Developer"
     },
@@ -94,5 +94,5 @@
       "Maven"
     ]
   },
-  "summary": "I'm a graduate from the University of Toronto with a Bachelor of Science in Computer Science and Mathematics. I'm a full-stack developer who gained practical experience through my one-year internship at SS\u0026C Technologies, volunteer work in a small team with the charity United for Literacy, and personal projects. Majority of the projects I've worked on have used React/React Native for the frontend and various backend tools such as Next.js, Java Spring Boot, and Django. Despite my experiences aligning with more React and Java work, my personal favourite language to use is C++ which I've been using since high school to solve competitive programming problems. I don't have professional experience with C++ yet but at some point, I do wish to have a job using it. Overall, I bring substantial hands-on experience in software development through my undergrad that I hope to leverage to succeed in my early career."
+  "summary": "I'm a graduate from the University of Toronto with a Bachelor of Science in Computer Science and Mathematics. I'm a full-stack developer who gained practical experience through my one-year internship at SS\u0026C Technologies, volunteer work in a small team with the charity United for Literacy, and personal projects. Majority of the projects I've worked on have used React/React Native for the frontend and various backend tools such as Next.js, Java Spring Boot, and Django. Despite my experiences aligning with more React and Java work, I eventually want to have a job using C++ as it's my personal favourite language to use. I've been using it since high school to solve competitive programming problems and course projects such as a lightweight networking stack and basic computer graphics using OpenGL. Overall, I bring substantial hands-on experience in software development through my undergrad that I hope to leverage to succeed in my early career."
 }

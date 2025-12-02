@@ -1,5 +1,5 @@
 # Introduction
-This project is a mimic of the Linux `grep` command which allows users to search matching strings from files. The general idea is to the user gives a directory/file to look at and find all in the lines in file(s) of the given directory's based on a regex the user gives. The resulting lines put into a user given output file. This tool has been built using Core Java features, Lambda and Stream APIs, SLF4J for logging, and JUnit for testing. Development has been done using Maven and IntelliJ IDE with additional deployment being added by the usage of Docker for containerisation.
+This project is a mimic of the Linux `grep` command which allows users to search matching strings from files. The general idea is to the user gives a directory/file to look at and find all in the lines in file(s) of the given directory's based on a regex the user gives. The resulting lines are put into a user given output file. This tool has been built using Core Java features, SLF4J for logging, and JUnit for testing. Lambda and Stream APIs are used for another version of the app that limits memory usage by reading and writing file data using a file buffer. Development has been done using Maven and IntelliJ IDE with additional deployment being added by the usage of Docker for containerisation.
 
 # Quick Start
 ## Building the App
@@ -47,14 +47,14 @@ writeToFile(matchedLines)
 ```
 
 ## Performance Issue
-The default implementation of the project reads the data at once which can lead to heap memory problems if the dataset is big enough. This can be remedied by using a BufferReader but the problem remains when the data is collected into one big list. Thus, the Lambda version of the app uses Stream APIs to handle data one-by-one rather than storing all the data in the heap.
+The default implementation of the project reads the data at once which can lead to heap memory problems if the dataset is big enough. This can be remedied by using a BufferedReader/BufferedWriter but the problem remains when the data is collected into one big list. Thus, the Lambda version of the app uses Stream APIs to handle data one-by-one rather than storing all the data in the heap.
 
 # Test
-There are tests for both the Java Grep file without and with lambda & stream APIs. The test cover at least one scenario for each of the implemented methods using the shakespeare.txt file in the data/txt folder. Output files are also made with a temporary folder that creates and deletes itself after every test.
+There are tests for both the Java Grep file without and with Lambda & Stream APIs. The test cover at least one scenario for each of the implemented methods using the shakespeare.txt file in the data/txt folder. Output files are also made with a temporary folder that creates and deletes itself after every test.
 
 # Deployment
-The app can be run using Docker as shown prior which allows the app to be distributed much more easily. You just need to create a Docker container using the Dockerfile given and then run the project using that container. Note, the base image is eclipse-temurin:8-jdk-alpine for the Dockerfile. Also, can be run and distributed by building and then sharing the jar file.
+The app can be run using Docker as shown prior which allows the app to be distributed much more easily. You just need to create a Docker container using the Dockerfile given and then run the project using that container. Note, the base image is eclipse-temurin:8-jdk-alpine for the Dockerfile. Also, can be run and distributed by building and then sharing the jar file as also shown prior.
 # Improvement
-1. Explicitly using UTF-8 instead of the platform default charset (e.g. new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8)), so behavior is predictable across machines.
-2. Clean up error handling and API consistency as the interface doesn't declare `throws IOException` on readLines, the project currently has a mixture of checked exceptions (process, writeToFile) and unchecked wrappers (RuntimeException from readLines).
+1. Explicitly use a charset like UTF-8 instead of the platform default charset, so behavior is predictable across machines.
+2. Add optional parallel processing for large directories to reduce time needed to scan files and match lines.
 3. Testing can be more extensive as only one test is given per method.
