@@ -1,0 +1,31 @@
+services:
+  db:
+    image: postgres:9.6-alpine
+    container_name: stockquote-db
+    environment:
+      POSTGRES_DB: stock_quote
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5433:5432"
+    volumes:
+      # persistent DB storage
+      - stockquote_db:/var/lib/postgresql/data
+      # run DDL at first initialization
+      - ./sql:/docker-entrypoint-initdb.d:ro
+
+  app:
+    build: .
+    container_name: stockquote-app
+    depends_on:
+      - db
+    volumes:
+      - ./src/main/resources/properties.txt:/usr/local/app/stockquote/config/properties.txt:ro
+    environment:
+      - DB_HOST=db
+    # needed as app is console-interactive
+    stdin_open: true
+    tty: true
+
+volumes:
+  stockquote_db:
