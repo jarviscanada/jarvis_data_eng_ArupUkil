@@ -4,4 +4,4 @@ database:stock_quote
 port:5432
 username:postgres
 password:password
-api-key:b2f6d6844cmshed410eacd2ae6c5p188065jsn8c94806be6c6
+api-key:
