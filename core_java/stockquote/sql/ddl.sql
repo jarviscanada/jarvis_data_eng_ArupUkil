@@ -2,6 +2,7 @@ DROP DATABASE IF EXISTS stock_quote;
 CREATE DATABASE stock_quote;
 \c stock_quote
 
+DROP TABLE IF EXISTS position;
 DROP TABLE IF EXISTS quote;
 CREATE TABLE quote (
    symbol              VARCHAR(10) PRIMARY KEY,
@@ -17,7 +18,6 @@ CREATE TABLE quote (
    timestamp           TIMESTAMP DEFAULT CURRENT_TIMESTAMP  NOT NULL
 );
 
-DROP TABLE IF EXISTS position;
 CREATE TABLE position (
   symbol                VARCHAR(10) PRIMARY KEY,
   number_of_shares      INT NOT NULL,
