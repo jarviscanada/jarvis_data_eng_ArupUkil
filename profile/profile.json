@@ -11,29 +11,29 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_ArupUkil",
   "highlighted_projects": [
     {
-      "description": "Created and deployed a social web app through AWS ECS, ECR, and RDS where you can write, share, and discuss about code in multiple programming languages using Next.js, React, TypeScript, and Tailwind CSS. Implemented a Prisma database schema which were managed and interacted via RESTful APIs with account authentication (JWT) in the backend infrastructure. Executed user code in isolated containers using Docker to maintain security and enforce limits on computer resource usage.",
+      "description": "Created and deployed a social web app on AWS (ECS, ECR, RDS) for writing, sharing, and discussing code in multiple programming languages using Next.js, React, TypeScript, and Tailwind CSS. Implemented a Prisma database schema managed via RESTful APIs with JWT-based authentication. Executed user code in isolated Docker containers to maintain security and enforce resource limits.",
       "git_url": "https://github.com/ArupUkil/Scriptorium",
       "name": "Scriptorium"
     },
     {
-      "description": "Worked with a team of six for a University of Toronto's partner charity, United for Literacy, to build an app that streamlines the volunteer lifecycle - from the application and onboarding process, through tools that support daily activities, to the final offboarding stage. Used React Native to create an in-app quiz that confirms that the volunteers understand United for Literacy's volunteering policy. Worked with a teammate to set up the group chat functionality - specifically connected the Django backend API with the frontend such that different types of users can be differentiated.",
+      "description": "Worked in a team of six for a University of Toronto partner charity, United for Literacy, to build an app that streamlines the volunteer lifecycle (application and onboarding through to offboarding). Built an in-app quiz in React Native to verify volunteer understanding of volunteering policies. Helped implement group chat by integrating the Django backend API with the frontend, including role-based behaviour for different user types.",
       "git_url": null,
       "name": "United for Literacy Volunteer Mobile App"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "Developed a Linux Cluster Monitoring Agent that helps collect information from Linux servers in a cluster. It collects the server hardware information once and then in set intervals (such as every minute) collects the server's resource usage. Tested on Rocky Linux 9 though it may work on other distros. The data is collected by executing bash scripts that run Linux commands and then saving the data in a PostgreSQL database that's run on a Docker container.",
+      "description": "Developed a Linux cluster monitoring agent that collects server hardware information once and then collects resource-usage metrics at fixed intervals (e.g., every minute). Tested on Rocky Linux 9 (and expected to work on similar distributions). Data is collected via Bash scripts that run standard Linux commands and is persisted in a PostgreSQL database running in a Docker container.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
     },
     {
-      "description": "Developed a mimic of the Linux `grep` command which allows users to search matching strings from files. The user gives a directory/file to look at and find all in the lines in that directory's files that match the regex the user gives. The resulting lines are put into a user given output file. This tool has been built using Core Java features, Lambda and Stream APIs, SLF4J for logging, and JUnit for testing. Development has been done using Maven and IntelliJ IDE with additional deployment being added by the usage of Docker for containerisation.",
+      "description": "Built a simplified clone of the Linux `grep` command that searches for regex matches across a user-provided file or directory and writes matching lines to an output file. Implemented using Core Java, Lambda/Stream APIs, SLF4J logging, and JUnit tests. Developed with Maven/IntelliJ, with deployment support via Docker for containerisation.",
       "git_url": "/core_java/grep",
       "name": "Grep App"
     },
     {
-      "description": "Developed a CLI Java stock trading platform that allows users to check real time stock information using the Alpha Vantage API and then potentially buy/sell stock positions that's saved through a PostgresSQL database. Unique tools to this project include JDBC to connect to the PSQL database, OkHttp to send HTTP requests/responses, and JUnit/Mockito/TestContainers for testing. Project architecture was a key focus with the usage of DAO and REST architecture, and Jackson Mixins so the app isn't dependent on the Alpha Vantage API.",
+      "description": "Developed a CLI Java stock trading platform that fetches real-time market data via the Alpha Vantage API and supports buying/selling positions persisted in a PostgreSQL database. Used JDBC for database access, OkHttp for HTTP requests/responses, and JUnit/Mockito/Testcontainers for testing. Emphasised clean architecture (e.g., DAO pattern and REST APIs) and used Jackson Mixins to avoid coupling the application to Alpha Vantage's response schema.",
       "git_url": "/core_java/stockquote",
       "name": "Stock Quote App"
     },
@@ -47,7 +47,8 @@
   "others": [
     {
       "bullets": [
-        "Kumon Teaching Assistant Volunteer: guided children from preschool to 12th grade to understand and solve their Kumon math and reading work"
+        "Care Worker, Su-Rekha Care Centre (Night Shift): maintained cleanliness and safety of the care home, assisted residents as needed, and prepared supplies and common areas for the next day.",
+        "Assistant Volunteer, Kumon: guided children from preschool to Grade 12 to understand and solve Kumon math and reading work"
       ],
       "title": "Volunteer Work"
     }
@@ -55,19 +56,19 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Trained my technical and behavioural skills through developing multiple software projects using new tools for each. Created projects such as a Linux Clustering Agent (Bash, PostgreSQL, and Docker), Java Grep App, and a Spring Boot Trading App. Developed projects using a Scrum system by having planning meetings, daily stand-ups, and retrospectives through project development.",
+      "description": "Developed technical and behavioural skills by delivering multiple projects using new tools for each. Built projects including a Linux Cluster Monitoring Agent (Bash, PostgreSQL, Docker), a Java Grep App, and a Spring Boot Trading App. Worked in a Scrum-based process with planning, daily stand-ups, and retrospectives.",
       "duration": "2025-present",
       "title": "Software Developer"
     },
     {
       "company": "SS\u0026C Technologies",
-      "description": "Used React and Java Spring Boot to develop a new test case queue manager that automates the management of test runs on remote machines. Created a website navigation tool using Playwright that creates a HTML page containing a BackstopJS report and a SS\u0026C internal files comparison tool report. Assisted in developing an Excel VBA macro that allows users to generate Progress 4GL queries without knowledge of Progress. Migrated and updated legacy scripts from LoadRunner to JMeter to eliminate financial expenses in performance testing.",
+      "description": "Used React and Java Spring Boot to develop a test case queue manager that automates management of test runs on remote machines. Built a website navigation tool using Playwright that generates an HTML page combining a BackstopJS report with an SS\u0026C internal files comparison report. Assisted with an Excel VBA macro to generate Progress 4GL queries for non-technical users. Migrated legacy performance scripts from LoadRunner to JMeter to reduce costs.",
       "duration": "Sept. 2023 - Aug. 2024",
       "title": "Software QA Engineer"
     },
     {
       "company": "iSE Labs",
-      "description": "Developed a Python/Flask based reverse engineering comprehension tool that parses source code call graphs into root-to-leaf execution paths and applies agglomerative clustering to produce a hierarchical tree representation. Enhanced semantic labeling of cluster nodes using Gensim topic models, introducing Word2Vec/Doc2Vec similarity measures, and TextRank for more accurate function name based annotations. Developed an interactive GoJS frontend to visualize comparisons of execution path trees across different software systems.",
+      "description": "Developed a Python/Flask-based reverse engineering comprehension tool that parses source-code call graphs into root-to-leaf execution paths and applies agglomerative clustering to produce a hierarchical tree representation. Enhanced semantic labelling of cluster nodes using Gensim topic models (Word2Vec/Doc2Vec similarity) and TextRank for more accurate function-name-based annotations. Developed an interactive GoJS frontend to visualise comparisons of execution-path trees across software systems.",
       "duration": "May 2022 - Aug. 2022",
       "title": "Research Assistant"
     }
@@ -83,8 +84,9 @@
     ],
     "familiar": [
       "Machine Learning",
-      "Python ML Libraries (NumPy, TensorFlow, Pytorch, Scikit-learn, Gensim)",
-      "Flask, Django",
+      "Python ML Libraries (NumPy, TensorFlow, PyTorch, Scikit-learn, Gensim)",
+      "Flask",
+      "Django",
       "Figma",
       "Jenkins",
       "Jira"
@@ -105,5 +107,5 @@
       "Maven"
     ]
   },
-  "summary": "I'm a graduate from the University of Toronto with a Bachelor of Science in Computer Science and Mathematics. I'm a full-stack developer who gained practical experience through my one-year internship at SS\u0026C Technologies, volunteer work in a small team with the charity United for Literacy, and personal projects. Majority of the projects I've worked on have used React/React Native for the frontend and various backend tools such as Next.js, Java Spring Boot, and Django. C++ is my personal favourite language to use where I've been using it since high school to solve competitive programming problems and course projects such as a lightweight networking stack and basic computer graphics using OpenGL. Overall, I bring substantial hands-on experience in software development through my undergrad that I hope to leverage to succeed in my early career."
+  "summary": "I'm a graduate of the University of Toronto, holding a Bachelor of Science degree in Computer Science and Mathematics. I'm a full-stack developer with practical experience from my one-year internship at SS\u0026C Technologies, volunteer work in a small team with the charity United for Literacy, and personal projects. Most of my work and personal projects have used React/React Native for the frontend and backend frameworks such as Next.js, Spring Boot, or Django. C++ is my favourite language, and I have used it since high school for competitive programming and course projects (including a lightweight networking stack and basic computer graphics with OpenGL). I bring substantial hands-on software development experience from my undergraduate studies and early roles, and I'm looking to leverage it in an early-career software engineering position."
 }
