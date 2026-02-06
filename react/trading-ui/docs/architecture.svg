@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <defs>
+    <style>
+      .title{font:700 22px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;fill:#0f172a}
+      .text{font:500 14px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;fill:#0f172a}
+      .small{font:500 12px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;fill:#334155}
+      .box{fill:#ffffff;stroke:#cbd5e1;stroke-width:2}
+      .box2{fill:#f8fafc;stroke:#cbd5e1;stroke-width:2}
+      .arrow{stroke:#334155;stroke-width:2;marker-end:url(#m)}
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="560" fill="#f5f7fa"/>
+  <text x="40" y="52" class="title">Trading UI Architecture (MVP)</text>
+  <text x="40" y="78" class="small">React (TypeScript) SPA → Axios → Spring Boot REST API → Postgres + Finnhub</text>
+
+  <!-- Browser -->
+  <rect x="60" y="140" width="240" height="120" rx="10" class="box"/>
+  <text x="84" y="176" class="text">User Browser</text>
+  <text x="84" y="202" class="small">Dashboard / Quotes / Trader Account</text>
+  <text x="84" y="226" class="small">React Router navigation</text>
+
+  <!-- React UI -->
+  <rect x="360" y="120" width="320" height="300" rx="10" class="box"/>
+  <text x="384" y="156" class="text">React UI (TypeScript)</text>
+  <rect x="392" y="182" width="256" height="62" rx="8" class="box2"/>
+  <text x="410" y="208" class="small">Dashboard</text>
+  <text x="410" y="228" class="small">Traders table + add/delete</text>
+
+  <rect x="392" y="258" width="256" height="62" rx="8" class="box2"/>
+  <text x="410" y="284" class="small">Quotes</text>
+  <text x="410" y="304" class="small">Daily list + add ticker</text>
+
+  <rect x="392" y="334" width="256" height="62" rx="8" class="box2"/>
+  <text x="410" y="360" class="small">Trader Account</text>
+  <text x="410" y="380" class="small">Profile + deposit/withdraw</text>
+
+  <text x="384" y="412" class="small">Axios + Ant Design (Table/Modal/Form)</text>
+
+  <!-- Spring Boot -->
+  <rect x="740" y="140" width="380" height="160" rx="10" class="box"/>
+  <text x="764" y="176" class="text">Spring Boot Trading API</text>
+  <text x="764" y="204" class="small">/dashboard/*, /trader/*, /quote/*</text>
+  <text x="764" y="228" class="small">Controller → Service → DAO</text>
+  <text x="764" y="252" class="small">CORS enabled for local dev</text>
+
+  <!-- Data sources -->
+  <rect x="740" y="330" width="180" height="110" rx="10" class="box"/>
+  <text x="764" y="366" class="text">Postgres</text>
+  <text x="764" y="392" class="small">trader/account/quote/order</text>
+
+  <rect x="940" y="330" width="180" height="110" rx="10" class="box"/>
+  <text x="964" y="366" class="text">Finnhub</text>
+  <text x="964" y="392" class="small">market data provider</text>
+
+  <!-- Arrows -->
+  <line x1="300" y1="200" x2="360" y2="200" class="arrow"/>
+  <line x1="680" y1="220" x2="740" y2="220" class="arrow"/>
+  <line x1="860" y1="300" x2="830" y2="330" class="arrow"/>
+  <line x1="1000" y1="300" x2="1030" y2="330" class="arrow"/>
+</svg>
+
