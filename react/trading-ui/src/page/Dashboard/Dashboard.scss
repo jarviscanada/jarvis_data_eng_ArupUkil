@@ -1,0 +1,25 @@
+.dashboard {
+  background-color: #f5f7fa;
+  padding-left: calc(56px * 2);
+  padding-right: 56px;
+  padding-top: 112px;
+  min-height: 100vh;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 24px;
+  }
+}
+
+.add-trader-form {
+  .add-trader-field {
+    padding-bottom: 12px;
+  }
+}
+

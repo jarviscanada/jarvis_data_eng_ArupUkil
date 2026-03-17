@@ -1,0 +1,62 @@
+.trader-details {
+  background-color: #f5f7fa;
+  padding-left: calc(56px * 2);
+  padding-right: 56px;
+  padding-top: 112px;
+  min-height: 100vh;
+
+  .trader-details-content {
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: left;
+      padding-bottom: 24px;
+    }
+
+    .placeholder {
+      color: #607089;
+    }
+
+    .trader-cards {
+      display: grid;
+      grid-template-columns: 520px 260px 1fr;
+      align-items: start;
+      gap: 24px;
+    }
+
+    .trader-card {
+      border-radius: 6px;
+    }
+
+    .amount-card {
+      text-align: center;
+      padding: 12px 0;
+
+      .amount-heading {
+        margin-top: 32px;
+        font-size: 24px;
+        color: #1f2a3a;
+        font-weight: 500;
+      }
+
+      .amount-value {
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #1f2a3a;
+        margin-bottom: 32px;
+      }
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      justify-content: flex-end;
+      padding-top: 8px;
+    }
+  }
+}

@@ -164,7 +164,7 @@ Code line coverage was above 70% for all the tested classes.
 
 # Deployment
 The app can be run using Docker as shown prior which allows the app to be distributed much more easily.
-The two containers msut be created using the images below but note a shared network must be created for the two docker containers to communicate with each other.
+The two containers must be created using the images below but note a shared network must be created for the two docker containers to communicate with each other.
 
 Image details:
 - `trading-psql`: built from `postgres:9.6-alpine`. It runs `psql/init.sql` during
