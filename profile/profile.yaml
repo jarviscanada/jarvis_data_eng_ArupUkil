@@ -66,11 +66,21 @@ jarvis_projects:
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: Developed a CLI Java stock trading platform that fetches real-time market data via the Alpha Vantage API and supports buying/selling positions persisted in a PostgreSQL database. Used JDBC for database access, OkHttp for HTTP requests/responses, and JUnit/Mockito/Testcontainers for testing. Emphasised clean architecture (e.g., DAO pattern and REST APIs) and used Jackson Mixins to avoid coupling the application to Alpha Vantage's response schema.
-  - name: "Spring Boot Trading App"
+  - name: "Spring Boot Trading App Backend"
     git_url: "/springboot"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: Built a Spring Boot trading system for managing traders/accounts, caching Finnhub market quotes in PostgreSQL, and submitting market orders via RESTful CRUD endpoints. Uses a layered (Controller → Service → DAO) architecture with Java 8, Spring Boot, JPA/Hibernate, and Apache HttpClient. Unit tests use Apache DBCP to provision temporary H2 DataSources, and Swagger UI is included for manual API testing.
+  - name: "React Trading App Frontend"
+    git_url: "/react"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Developed a React and TypeScript frontend for the Spring Boot trading app, including dashboard, quotes, and trader account pages for managing traders, viewing cached market data, and depositing/withdrawing funds. Used React Router for navigation, Ant Design for UI components, Axios for API calls, and Jest/React Testing Library for basic frontend testing.
+  - name: "Cloud, Kubernetes, and DevOps"
+    git_url: "/cloud_k8_jenkins"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Deployed the containerised Spring Boot trading app backend on Azure using Azure Kubernetes Service (AKS) and Azure Container Registry (ACR) with a fully automated CI/CD pipeline using Jenkins. The pipeline builds and pushes images onto ACR and then deploys the app for development or production.
 #  - name: "Core Java Apps"
 #    git_url: "/core_java"
 #    description:
