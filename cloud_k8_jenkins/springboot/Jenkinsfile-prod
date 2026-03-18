@@ -1,35 +1,35 @@
 pipeline {
-agent {
-  kubernetes {
-    yaml """
-    apiVersion: v1
-    kind: Pod
-    spec:
-      serviceAccountName: jenkins-agent
-      containers:
-      - name: jnlp
-        image: jenkins/inbound-agent:latest
-        args: ['\$(JENKINS_SECRET)', '\$(JENKINS_NAME)']
-      - name: azcli
-        image: mcr.microsoft.com/azure-cli
-        command: ['cat']
-        tty: true
-        volumeMounts:
+  agent {
+    kubernetes {
+      yaml """
+      apiVersion: v1
+      kind: Pod
+      spec:
+        serviceAccountName: jenkins-agent
+        containers:
+        - name: jnlp
+          image: jenkins/inbound-agent:latest
+          args: ['\$(JENKINS_SECRET)', '\$(JENKINS_NAME)']
+        - name: azcli
+          image: mcr.microsoft.com/azure-cli
+          command: ['cat']
+          tty: true
+          volumeMounts:
+            - name: kube-config
+              mountPath: /home/jenkins/.kube
+        - name: kubectl
+          image: lachlanevenson/k8s-kubectl:latest
+          command: ['cat']
+          tty: true
+          volumeMounts:
+            - name: kube-config
+              mountPath: /home/jenkins/.kube
+        volumes:
           - name: kube-config
-            mountPath: /home/jenkins/.kube
-      - name: kubectl
-        image: lachlanevenson/k8s-kubectl:latest
-        command: ['cat']
-        tty: true
-        volumeMounts:
-          - name: kube-config
-            mountPath: /home/jenkins/.kube
-      volumes:
-        - name: kube-config
-          emptyDir: {}
-    """
+            emptyDir: {}
+      """
+    }
   }
-}
 
   environment {
     AZ_USER=credentials('AZ_USER_DEV')
