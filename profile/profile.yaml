@@ -23,18 +23,20 @@ skills:
     - Spring Boot
     - Linux/Bash
     - PostgreSQL/SQL
-    - Agile/Scrum
     - Git
-    - REST APIs
-    - Maven
+    - Docker
+    - Kubernetes
   # At least 5 skills
   competent:
     - Python
     - C
     - AWS
-    - Docker
+    - Azure
     - WSL
     - Postman
+    - CI/CD (Jenkins)
+    - Agile/Scrum
+    - Maven
   # At least 5 skills
   familiar:
     - Machine Learning
@@ -42,7 +44,6 @@ skills:
     - Flask
     - Django
     - Figma
-    - Jenkins
     - Jira
 
 # List of Jarvis projects
@@ -114,7 +115,7 @@ highlighted_projects:
     description: Created and deployed a social web app on AWS (ECS, ECR, RDS) for writing, sharing, and discussing code in multiple programming languages using Next.js, React, TypeScript, and Tailwind CSS. Implemented a Prisma database schema managed via RESTful APIs with JWT-based authentication. Executed user code in isolated Docker containers to maintain security and enforce resource limits.
   - name: "United for Literacy Volunteer Mobile App"
     git_url:
-    description: Worked in a team of six for a University of Toronto partner charity, United for Literacy, to build an app that streamlines the volunteer lifecycle (application and onboarding through to offboarding). Built an in-app quiz in React Native to verify volunteer understanding of volunteering policies. Helped implement group chat by integrating the Django backend API with the frontend, including role-based behaviour for different user types.
+    description: Worked in a team of six for a University of Toronto partner charity, United for Literacy, to build an app that streamlines the volunteer lifecycle (application and onboarding through to offboarding). Built an in-app quiz in React Native to verify volunteers’ understanding of program policies. Helped implement group chat by integrating the Django backend API with the frontend, including role-based behaviour for different user types.
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
@@ -125,7 +126,7 @@ professional_experience:
     company: "Jarvis"
     duration: "2025-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Developed technical and behavioural skills by delivering multiple projects using new tools for each. Built projects including a Linux Cluster Monitoring Agent (Bash, PostgreSQL, Docker), a Java Grep App, and a Spring Boot Trading App. Worked in a Scrum-based process with planning, daily stand-ups, and retrospectives."
+    description: "Developed technical and behavioural skills by delivering multiple projects using new tools for each. Built projects including a Linux Cluster Monitoring Agent (Bash, PostgreSQL, Docker), a Java Grep App, and a React & Spring Boot Trading App deployed on Azure Kubernetes Service. Worked in a Scrum-based process with planning, daily stand-ups, and retrospectives."
   - title: "Software QA Engineer"
     company: "SS&C Technologies"
     duration: "Sept. 2023 - Aug. 2024"
@@ -135,7 +136,7 @@ professional_experience:
     duration: "May 2022 - Aug. 2022"
     description: "Developed a Python/Flask-based reverse engineering comprehension tool that parses source-code call graphs into root-to-leaf execution paths and applies agglomerative clustering to produce a hierarchical tree representation. Enhanced semantic labelling of cluster nodes using Gensim topic models (Word2Vec/Doc2Vec similarity) and TextRank for more accurate function-name-based annotations. Developed an interactive GoJS frontend to visualise comparisons of execution-path trees across software systems."
 
-#List of edcuation
+#List of education
 education: 
   - school_name: "University of Toronto"
     duration: "2020-2025"
@@ -160,4 +161,4 @@ others:
   - title: "Volunteer Work"
     bullets:
       - "Care Worker, Su-Rekha Care Centre (Night Shift): maintained cleanliness and safety of the care home, assisted residents as needed, and prepared supplies and common areas for the next day."
-      - "Assistant Volunteer, Kumon: guided children from preschool to Grade 12 to understand and solve Kumon math and reading work"
+      - "Assistant Volunteer, Kumon: helped students from preschool to Grade 12 understand and complete Kumon math and reading assignments"

@@ -16,7 +16,7 @@
       "name": "Scriptorium"
     },
     {
-      "description": "Worked in a team of six for a University of Toronto partner charity, United for Literacy, to build an app that streamlines the volunteer lifecycle (application and onboarding through to offboarding). Built an in-app quiz in React Native to verify volunteer understanding of volunteering policies. Helped implement group chat by integrating the Django backend API with the frontend, including role-based behaviour for different user types.",
+      "description": "Worked in a team of six for a University of Toronto partner charity, United for Literacy, to build an app that streamlines the volunteer lifecycle (application and onboarding through to offboarding). Built an in-app quiz in React Native to verify volunteers’ understanding of program policies. Helped implement group chat by integrating the Django backend API with the frontend, including role-based behaviour for different user types.",
       "git_url": null,
       "name": "United for Literacy Volunteer Mobile App"
     }
@@ -58,7 +58,7 @@
     {
       "bullets": [
         "Care Worker, Su-Rekha Care Centre (Night Shift): maintained cleanliness and safety of the care home, assisted residents as needed, and prepared supplies and common areas for the next day.",
-        "Assistant Volunteer, Kumon: guided children from preschool to Grade 12 to understand and solve Kumon math and reading work"
+        "Assistant Volunteer, Kumon: helped students from preschool to Grade 12 understand and complete Kumon math and reading assignments"
       ],
       "title": "Volunteer Work"
     }
@@ -66,7 +66,7 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Developed technical and behavioural skills by delivering multiple projects using new tools for each. Built projects including a Linux Cluster Monitoring Agent (Bash, PostgreSQL, Docker), a Java Grep App, and a Spring Boot Trading App. Worked in a Scrum-based process with planning, daily stand-ups, and retrospectives.",
+      "description": "Developed technical and behavioural skills by delivering multiple projects using new tools for each. Built projects including a Linux Cluster Monitoring Agent (Bash, PostgreSQL, Docker), a Java Grep App, and a React \u0026 Spring Boot Trading App deployed on Azure Kubernetes Service. Worked in a Scrum-based process with planning, daily stand-ups, and retrospectives.",
       "duration": "2025-present",
       "title": "Software Developer"
     },
@@ -88,9 +88,12 @@
       "Python",
       "C",
       "AWS",
-      "Docker",
+      "Azure",
       "WSL",
-      "Postman"
+      "Postman",
+      "CI/CD (Jenkins)",
+      "Agile/Scrum",
+      "Maven"
     ],
     "familiar": [
       "Machine Learning",
@@ -98,7 +101,6 @@
       "Flask",
       "Django",
       "Figma",
-      "Jenkins",
       "Jira"
     ],
     "proficient": [
@@ -111,10 +113,9 @@
       "Spring Boot",
       "Linux/Bash",
       "PostgreSQL/SQL",
-      "Agile/Scrum",
       "Git",
-      "REST APIs",
-      "Maven"
+      "Docker",
+      "Kubernetes"
     ]
   },
   "summary": "I'm a graduate of the University of Toronto, holding a Bachelor of Science degree in Computer Science and Mathematics. I'm a full-stack developer with practical experience from my one-year internship at SS\u0026C Technologies, volunteer work in a small team with the charity United for Literacy, and personal projects. Most of my work and personal projects have used React/React Native for the frontend and backend frameworks such as Next.js, Spring Boot, or Django. C++ is my favourite language, and I have used it since high school for competitive programming and course projects (including a lightweight networking stack and basic computer graphics with OpenGL). I bring substantial hands-on software development experience from my undergraduate studies and early roles, and I'm looking to leverage it in an early-career software engineering position."

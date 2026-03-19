@@ -71,7 +71,7 @@ Users interact with the application through three main pages:
 Ant Design forms are used for frontend validation (required fields, email format, and positive numeric amount checks). Errors are surfaced with toast messages for quick iteration during testing.
 
 ## Architecture
-![Architecture Diagram](docs/architecture.svg)
+![Architecture Diagram](trading-ui/docs/architecture.svg)
 
 # Test
 Frontend:

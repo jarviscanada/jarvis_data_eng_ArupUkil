@@ -4,11 +4,11 @@ I'm a graduate of the University of Toronto, holding a Bachelor of Science degre
 
 ## Skills
 
-**Proficient:** React/React Native, Node.js/Next.js, HTML/CSS, TypeScript/JavaScript, C++, Java, Spring Boot, Linux/Bash, PostgreSQL/SQL, Agile/Scrum, Git, REST APIs, Maven
+**Proficient:** React/React Native, Node.js/Next.js, HTML/CSS, TypeScript/JavaScript, C++, Java, Spring Boot, Linux/Bash, PostgreSQL/SQL, Git, Docker, Kubernetes
 
-**Competent:** Python, C, AWS, Docker, WSL, Postman
+**Competent:** Python, C, AWS, Azure, WSL, Postman, CI/CD (Jenkins), Agile/Scrum, Maven
 
-**Familiar:** Machine Learning, Python ML Libraries (NumPy, TensorFlow, PyTorch, Scikit-learn, Gensim), Flask, Django, Figma, Jenkins, Jira
+**Familiar:** Machine Learning, Python ML Libraries (NumPy, TensorFlow, PyTorch, Scikit-learn, Gensim), Flask, Django, Figma, Jira
 
 ## Jarvis Projects
 
@@ -31,12 +31,12 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_ArupUkil](
 ## Highlighted Projects
 **Scriptorium** [[GitHub](https://github.com/ArupUkil/Scriptorium)]: Created and deployed a social web app on AWS (ECS, ECR, RDS) for writing, sharing, and discussing code in multiple programming languages using Next.js, React, TypeScript, and Tailwind CSS. Implemented a Prisma database schema managed via RESTful APIs with JWT-based authentication. Executed user code in isolated Docker containers to maintain security and enforce resource limits.
 
-**United for Literacy Volunteer Mobile App**: Worked in a team of six for a University of Toronto partner charity, United for Literacy, to build an app that streamlines the volunteer lifecycle (application and onboarding through to offboarding). Built an in-app quiz in React Native to verify volunteer understanding of volunteering policies. Helped implement group chat by integrating the Django backend API with the frontend, including role-based behaviour for different user types.
+**United for Literacy Volunteer Mobile App**: Worked in a team of six for a University of Toronto partner charity, United for Literacy, to build an app that streamlines the volunteer lifecycle (application and onboarding through to offboarding). Built an in-app quiz in React Native to verify volunteers’ understanding of program policies. Helped implement group chat by integrating the Django backend API with the frontend, including role-based behaviour for different user types.
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2025-present)**: Developed technical and behavioural skills by delivering multiple projects using new tools for each. Built projects including a Linux Cluster Monitoring Agent (Bash, PostgreSQL, Docker), a Java Grep App, and a Spring Boot Trading App. Worked in a Scrum-based process with planning, daily stand-ups, and retrospectives.
+**Software Developer, Jarvis (2025-present)**: Developed technical and behavioural skills by delivering multiple projects using new tools for each. Built projects including a Linux Cluster Monitoring Agent (Bash, PostgreSQL, Docker), a Java Grep App, and a React & Spring Boot Trading App deployed on Azure Kubernetes Service. Worked in a Scrum-based process with planning, daily stand-ups, and retrospectives.
 
 **Software QA Engineer, SS&C Technologies (Sept. 2023 - Aug. 2024)**: Used React and Java Spring Boot to develop a test case queue manager that automates management of test runs on remote machines. Built a website navigation tool using Playwright that generates an HTML page combining a BackstopJS report with an SS&C internal files comparison report. Assisted with an Excel VBA macro to generate Progress 4GL queries for non-technical users. Migrated legacy performance scripts from LoadRunner to JMeter to reduce costs.
 
@@ -49,4 +49,4 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_ArupUkil](
 
 ## Miscellaneous
 - Care Worker, Su-Rekha Care Centre (Night Shift): maintained cleanliness and safety of the care home, assisted residents as needed, and prepared supplies and common areas for the next day.
-- Assistant Volunteer, Kumon: guided children from preschool to Grade 12 to understand and solve Kumon math and reading work
+- Assistant Volunteer, Kumon: helped students from preschool to Grade 12 understand and complete Kumon math and reading assignments
