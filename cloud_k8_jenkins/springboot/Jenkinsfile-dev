@@ -11,14 +11,14 @@ pipeline {
           image: jenkins/inbound-agent:latest
           args: ['\$(JENKINS_SECRET)', '\$(JENKINS_NAME)']
         - name: azcli
-          image: mcr.microsoft.com/azure-cli
+          image: mcr.microsoft.com/azure-cli:2.61.0
           command: ['cat']
           tty: true
           volumeMounts:
             - name: kube-config
               mountPath: /home/jenkins/.kube
         - name: kubectl
-          image: lachlanevenson/k8s-kubectl:latest
+          image: bitnami/kubectl:1.30.3
           command: ['cat']
           tty: true
           volumeMounts:
@@ -32,59 +32,94 @@ pipeline {
   }
 
   environment {
-    AZ_USER=credentials('AZ_USER_DEV')
-    AZ_PWD=credentials('AZ_PWD_DEV')
-    AZ_TENANT=credentials('AZ_TENANT_DEV')
+    AZ_USER = credentials('AZ_USER_DEV')
+    AZ_PWD = credentials('AZ_PWD_DEV')
+    AZ_TENANT = credentials('AZ_TENANT_DEV')
 
-    ACR_NAME='acrjarvisarupukil'
-    IMAGE_NAME="trading-app:${BUILD_NUMBER}"
-    RESOURCE_GROUP='rg-trading-app-aks'
-    CLUSTER_NAME='aks-trading-app'
-    ACR_LOGIN='acrjarvisarupukil.azurecr.io'
+    ACR_NAME = 'acrjarvisarupukil'
+    ACR_LOGIN = 'acrjarvisarupukil.azurecr.io'
+    RESOURCE_GROUP = 'rg-trading-app-aks'
+    CLUSTER_NAME = 'aks-trading-app'
+    DEPLOYMENT_NAME = 'trading'
+    CONTAINER_NAME = 'trading'
+    IMAGE_REPO = 'trading-app'
+    IMAGE_TAG = "${BUILD_NUMBER}"
+    KUBECONFIG_PATH = '/home/jenkins/.kube/config'
   }
 
   stages {
-    stage('Init') {
+    stage('Validate Branch') {
       steps {
-        container('azcli') {
-          sh 'az version'
-          sh 'az login --service-principal --username $AZ_USER --password $AZ_PWD --tenant $AZ_TENANT'
-        }
-      }
-    }
-
-    stage('Build & Push') {
-      steps {
-        container('azcli') {
-          sh "az acr build --image ${IMAGE_NAME} --registry ${ACR_NAME} --file springboot/Dockerfile springboot"
-        }
-      }
-    }
-
-    stage('Deploy') {
-      steps {
-            container('azcli') {
-              sh '''
-                mkdir -p /home/jenkins/.kube
-                az aks get-credentials \
-                  --resource-group ${RESOURCE_GROUP} \
-                  --name ${CLUSTER_NAME} \
-                  --file /home/jenkins/.kube/config
-              '''
-            }
-            container('kubectl') {
-              sh '''
-                export KUBECONFIG=/home/jenkins/.kube/config
-                kubectl config view
-
-                kubectl set image deployment/trading \
-                  trading=${ACR_LOGIN}/${IMAGE_NAME}
-
-                kubectl rollout status deployment/trading
-                kubectl get all
-              '''
-            }
+        script {
+          if (env.BRANCH_NAME != 'develop') {
+            error("This pipeline only deploys the develop branch. Current branch: ${env.BRANCH_NAME}")
           }
+        }
+      }
+    }
+
+    stage('Azure Login') {
+      steps {
+        container('azcli') {
+          sh 'az login --service-principal --username "$AZ_USER" --password "$AZ_PWD" --tenant "$AZ_TENANT"'
+        }
+      }
+    }
+
+    stage('Build And Push Image') {
+      steps {
+        container('azcli') {
+          sh '''
+            az acr build \
+              --registry "${ACR_NAME}" \
+              --image "${IMAGE_REPO}:${IMAGE_TAG}" \
+              --file springboot/Dockerfile \
+              springboot
+          '''
+        }
+      }
+    }
+
+    stage('Connect To AKS') {
+      steps {
+        container('azcli') {
+          sh '''
+            mkdir -p /home/jenkins/.kube
+            az aks get-credentials \
+              --resource-group "${RESOURCE_GROUP}" \
+              --name "${CLUSTER_NAME}" \
+              --file "${KUBECONFIG_PATH}" \
+              --overwrite-existing
+          '''
+        }
+      }
+    }
+
+    stage('Deploy To Dev') {
+      steps {
+        container('kubectl') {
+          sh '''
+            export KUBECONFIG="${KUBECONFIG_PATH}"
+
+            kubectl set image deployment/"${DEPLOYMENT_NAME}" \
+              "${CONTAINER_NAME}"="${ACR_LOGIN}/${IMAGE_REPO}:${IMAGE_TAG}"
+
+            kubectl rollout status deployment/"${DEPLOYMENT_NAME}" --timeout=180s
+            kubectl get deployment "${DEPLOYMENT_NAME}" -o wide
+          '''
+        }
+      }
+    }
+  }
+
+  post {
+    always {
+      container('kubectl') {
+        sh '''
+          export KUBECONFIG="${KUBECONFIG_PATH}"
+          kubectl get pods || true
+        '''
+      }
     }
   }
 }

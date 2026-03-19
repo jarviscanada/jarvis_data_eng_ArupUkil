@@ -3,7 +3,7 @@ secretGenerator:
     literals:
       - user=postgres
       - password=password
-      - FINNHUB_TOKEN=d5ipqopr01qicq2k4vhgd5ipqopr01qicq2k4vi0
+      - FINNHUB_TOKEN=
 resources:
   - psql-deployment.yaml
   - trading-deployment.yaml
