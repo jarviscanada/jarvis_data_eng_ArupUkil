@@ -40,7 +40,17 @@
     {
       "description": "Built a Spring Boot trading system for managing traders/accounts, caching Finnhub market quotes in PostgreSQL, and submitting market orders via RESTful CRUD endpoints. Uses a layered (Controller → Service → DAO) architecture with Java 8, Spring Boot, JPA/Hibernate, and Apache HttpClient. Unit tests use Apache DBCP to provision temporary H2 DataSources, and Swagger UI is included for manual API testing.",
       "git_url": "/springboot",
-      "name": "Spring Boot Trading App"
+      "name": "Spring Boot Trading App Backend"
+    },
+    {
+      "description": "Developed a React and TypeScript frontend for the Spring Boot trading app, including dashboard, quotes, and trader account pages for managing traders, viewing cached market data, and depositing/withdrawing funds. Used React Router for navigation, Ant Design for UI components, Axios for API calls, and Jest/React Testing Library for basic frontend testing.",
+      "git_url": "/react",
+      "name": "React Trading App Frontend"
+    },
+    {
+      "description": "Deployed the containerised Spring Boot trading app backend on Azure using Azure Kubernetes Service (AKS) and Azure Container Registry (ACR) with a fully automated CI/CD pipeline using Jenkins. The pipeline builds and pushes images onto ACR and then deploys the app for development or production.",
+      "git_url": "/cloud_k8_jenkins",
+      "name": "Cloud, Kubernetes, and DevOps"
     }
   ],
   "name": "Arup Ukil",
