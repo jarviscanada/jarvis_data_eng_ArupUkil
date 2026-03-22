@@ -45,7 +45,7 @@ spec:
         tier: db
     spec:
       containers:
-        - image: trading-psql:1.0.1
+        - image: trading-psql:1.0.0
           imagePullPolicy: IfNotPresent
           name: psql
           env:

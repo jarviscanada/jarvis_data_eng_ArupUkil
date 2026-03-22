@@ -34,7 +34,7 @@ spec:
         tier: app-server
     spec:
       containers:
-        - image: acrjarvisarupukil.azurecr.io/trading-app:1.0.1
+        - image: acrjarvisarupukil.azurecr.io/trading-app:1.0.0
           imagePullPolicy: IfNotPresent
           name: trading
           env:

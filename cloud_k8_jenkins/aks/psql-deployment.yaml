@@ -46,7 +46,7 @@ spec:
         tier: db
     spec:
       containers:
-        - image: acrjarvisarupukil.azurecr.io/trading-psql:1.0.1
+        - image: acrjarvisarupukil.azurecr.io/trading-psql:1.0.0
           imagePullPolicy: IfNotPresent
           name: psql
           env:
