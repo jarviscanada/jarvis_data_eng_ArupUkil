@@ -54,7 +54,7 @@
     },
     {
       "description": "Developed a proof-of-concept analytics solution for London Gift Shop (LGS) to uncover order trends, customer retention patterns, and high-value shopper characteristics. Built the workflow using Docker, PostgreSQL, Jupyter Notebook, Python, Pandas, NumPy, Matplotlib, Seaborn, SQLAlchemy, and SQL. Then, analyzed invoice distributions, monthly KPIs, customer lifecycle metrics, and RFM segments to generate actionable business recommendations.",
-      "git_url": "/python_data_anlytics",
+      "git_url": "/python_data_analytics",
       "name": "Python Data Analytics"
     }
   ],

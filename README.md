@@ -27,7 +27,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_ArupUkil](
 
 **Cloud, Kubernetes, and DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil/tree/master/cloud_k8_jenkins)]: Deployed the containerised Spring Boot trading app backend on Azure using Azure Kubernetes Service (AKS) and Azure Container Registry (ACR) with a fully automated CI/CD pipeline using Jenkins. The pipeline builds and pushes images onto ACR and then deploys the app for development or production.
 
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil/tree/master/python_data_anlytics)]: Developed a proof-of-concept analytics solution for London Gift Shop (LGS) to uncover order trends, customer retention patterns, and high-value shopper characteristics. Built the workflow using Docker, PostgreSQL, Jupyter Notebook, Python, Pandas, NumPy, Matplotlib, Seaborn, SQLAlchemy, and SQL. Then, analyzed invoice distributions, monthly KPIs, customer lifecycle metrics, and RFM segments to generate actionable business recommendations.
+**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil/tree/master/python_data_analytics)]: Developed a proof-of-concept analytics solution for London Gift Shop (LGS) to uncover order trends, customer retention patterns, and high-value shopper characteristics. Built the workflow using Docker, PostgreSQL, Jupyter Notebook, Python, Pandas, NumPy, Matplotlib, Seaborn, SQLAlchemy, and SQL. Then, analyzed invoice distributions, monthly KPIs, customer lifecycle metrics, and RFM segments to generate actionable business recommendations.
 
 
 ## Highlighted Projects
