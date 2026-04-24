@@ -4,9 +4,9 @@ I'm a graduate of the University of Toronto, holding a Bachelor of Science degre
 
 ## Skills
 
-**Proficient:** React/React Native, Node.js/Next.js, HTML/CSS, TypeScript/JavaScript, C++, Java, Spring Boot, Linux/Bash, PostgreSQL/SQL, Git, Docker, Kubernetes
+**Proficient:** React/React Native, Node.js/Next.js, HTML/CSS, TypeScript/JavaScript, C++, Java, Spring Boot, Linux/Bash, PostgreSQL/SQL, Git, Docker, Kubernetes, Spark/PySpark
 
-**Competent:** Python, C, AWS, Azure, WSL, Postman, CI/CD (Jenkins), Agile/Scrum, Maven
+**Competent:** Python, C, AWS, Azure, WSL, Postman, CI/CD (Jenkins), Agile/Scrum, Maven, Scala, Databricks
 
 **Familiar:** Machine Learning, Python ML Libraries (NumPy, TensorFlow, PyTorch, Scikit-learn, Gensim), Flask, Django, Figma, Jira
 
@@ -28,6 +28,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_ArupUkil](
 **Cloud, Kubernetes, and DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil/tree/master/cloud_k8_jenkins)]: Deployed the containerised Spring Boot trading app backend on Azure using Azure Kubernetes Service (AKS) and Azure Container Registry (ACR) with a fully automated CI/CD pipeline using Jenkins. The pipeline builds and pushes images onto ACR and then deploys the app for development or production.
 
 **Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil/tree/master/python_data_analytics)]: Developed a proof-of-concept analytics solution for London Gift Shop (LGS) to uncover order trends, customer retention patterns, and high-value shopper characteristics. Built the workflow using Docker, PostgreSQL, Jupyter Notebook, Python, Pandas, NumPy, Matplotlib, Seaborn, SQLAlchemy, and SQL. Then, analyzed invoice distributions, monthly KPIs, customer lifecycle metrics, and RFM segments to generate actionable business recommendations.
+
+**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_ArupUkil/tree/master/spark)]: Developed Spark-based analytics workflows in Azure Databricks and Zeppelin on GCP Dataproc. Re-implemented the earlier Python Data Analytics retail notebook as a PySpark solution in Databricks using Spark SQL, PySpark DataFrames, and shared tables. Also analysed World Development Indicators data in Zeppelin using Spark SQL and PySpark for GDP-focused queries and comparisons.
 
 
 ## Highlighted Projects

@@ -26,6 +26,7 @@ skills:
     - Git
     - Docker
     - Kubernetes
+    - Spark/PySpark
   # At least 5 skills
   competent:
     - Python
@@ -37,6 +38,8 @@ skills:
     - CI/CD (Jenkins)
     - Agile/Scrum
     - Maven
+    - Scala
+    - Databricks
   # At least 5 skills
   familiar:
     - Machine Learning
@@ -87,6 +90,11 @@ jarvis_projects:
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: Developed a proof-of-concept analytics solution for London Gift Shop (LGS) to uncover order trends, customer retention patterns, and high-value shopper characteristics. Built the workflow using Docker, PostgreSQL, Jupyter Notebook, Python, Pandas, NumPy, Matplotlib, Seaborn, SQLAlchemy, and SQL. Then, analyzed invoice distributions, monthly KPIs, customer lifecycle metrics, and RFM segments to generate actionable business recommendations.
+  - name: "Spark"
+    git_url: "/spark"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Developed Spark-based analytics workflows in Azure Databricks and Zeppelin on GCP Dataproc. Re-implemented the earlier Python Data Analytics retail notebook as a PySpark solution in Databricks using Spark SQL, PySpark DataFrames, and shared tables. Also analysed World Development Indicators data in Zeppelin using Spark SQL and PySpark for GDP-focused queries and comparisons.
 #  - name: "Core Java Apps"
 #    git_url: "/core_java"
 #    description:

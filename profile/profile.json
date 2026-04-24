@@ -56,6 +56,11 @@
       "description": "Developed a proof-of-concept analytics solution for London Gift Shop (LGS) to uncover order trends, customer retention patterns, and high-value shopper characteristics. Built the workflow using Docker, PostgreSQL, Jupyter Notebook, Python, Pandas, NumPy, Matplotlib, Seaborn, SQLAlchemy, and SQL. Then, analyzed invoice distributions, monthly KPIs, customer lifecycle metrics, and RFM segments to generate actionable business recommendations.",
       "git_url": "/python_data_analytics",
       "name": "Python Data Analytics"
+    },
+    {
+      "description": "Developed Spark-based analytics workflows in Azure Databricks and Zeppelin on GCP Dataproc. Re-implemented the earlier Python Data Analytics retail notebook as a PySpark solution in Databricks using Spark SQL, PySpark DataFrames, and shared tables. Also analysed World Development Indicators data in Zeppelin using Spark SQL and PySpark for GDP-focused queries and comparisons.",
+      "git_url": "/spark",
+      "name": "Spark"
     }
   ],
   "name": "Arup Ukil",
@@ -98,7 +103,9 @@
       "Postman",
       "CI/CD (Jenkins)",
       "Agile/Scrum",
-      "Maven"
+      "Maven",
+      "Scala",
+      "Databricks"
     ],
     "familiar": [
       "Machine Learning",
@@ -120,7 +127,8 @@
       "PostgreSQL/SQL",
       "Git",
       "Docker",
-      "Kubernetes"
+      "Kubernetes",
+      "Spark/PySpark"
     ]
   },
   "summary": "I'm a graduate of the University of Toronto, holding a Bachelor of Science degree in Computer Science and Mathematics. I'm a full-stack developer with practical experience from my one-year internship at SS\u0026C Technologies, volunteer work in a small team with the charity United for Literacy, and personal projects. Most of my work and personal projects have used React/React Native for the frontend and backend frameworks such as Next.js, Spring Boot, or Django. C++ is my favourite language, and I have used it since high school for competitive programming and course projects (including a lightweight networking stack and basic computer graphics with OpenGL). I bring substantial hands-on software development experience from my undergraduate studies and early roles, and I'm looking to leverage it in an early-career software engineering position."
